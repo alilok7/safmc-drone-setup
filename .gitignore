@@ -1,0 +1,8 @@
+# Machine-local settings: they hold the Wi-Fi password and this laptop's drone. Never commit them.
+config/*.env
+# Big third-party clones made by scripts/setup-laptop.ps1 (course firmware, ESP-IDF)
+external/
+# Firmware builds and backups of old ESP32 firmware (made by scripts/flash-drone.ps1)
+build/
+__pycache__/
+*.pyc
