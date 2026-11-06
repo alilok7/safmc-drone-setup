@@ -12,7 +12,7 @@ The first drone set up with this procedure; the guide is written from it.
 | Wiring (FC TELEM1 → XIAO) | TX1 → D4 (GPIO5), RX1 → D5 (GPIO6) → `ESP_RX_PIN=5`, `ESP_TX_PIN=6` (**not** the course default) |
 | Battery | 2S LiPo (label "7.6 V"), charged as LiPo to 4.2 V/cell |
 | COM ports on that laptop | FC COM5/COM7, ESP32 COM6 (changed between sessions) |
-| RC | not yet |
+| RC | RadioMaster TX16S + ELRS. SB down arms, SB up disarms; SF down stops motors instantly (props-off tests) |
 
 ## Setup log
 | Date | Phase | Result |
@@ -25,7 +25,7 @@ The first drone set up with this procedure; the guide is written from it.
 | 2026-10-30 | 6 ESP32 flash | Old firmware (a teammate's Arduino Wi-Fi test) backed up, course firmware flashed |
 | 2026-10-30 | 7 Link check | First: Wi-Fi OK, camera + AprilTag OK, but `Waiting for telemetry` (PX4 `mavlink status`: TELEM1 tx ~1.6 kB/s, rx 0). Cause: wiring ≠ course default. Fixed in software with RX 5 / TX 6 → **PASS**, telemetry 7.6/s |
 | 2026-10-30 | 8 Motor test | ✅ order and direction correct for quad X |
-| | 9 RC + kill switch | to do |
+| 2026-11-05 to 2026-11-06 | 9 RC + kill switch | ELRS paired, receiver changed SBUS → CRSF, radio calibrated; SB arm/disarm and SF motor stop confirmed with props off |
 | | 10 First hover | to do |
 
 ## Different on this drone / problems hit
